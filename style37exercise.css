@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+/*  <---------------------- variables ----------------------> */
+
+:root{
+
+    /*  <---------------------- Navigation bar css ----------------------> */
+    --navbarbackground_color:rgb(0, 144, 210);
+    --navelemnt_color:rgb(81, 249, 238);
+    --shadow:red;
+    --box_shadow:rgb(13, 97, 142);
+
+    /*  <---------------------- section part ----------------------> */
+    --background_colorsec: rgb(0, 0, 0);
+    --shadowsec:rgb(123, 123, 123);
+    --text_coolor:white;
+}
+
+
+
+
+
+
+
+
+
+/*  <---------------------- Navigation bar css ----------------------> */
+
+nav{
+    /* border: 2px solid black; */
+    margin: 5px;
+    box-shadow: 8px 8px 10px 0px darkblue inset;
+    background-color: var(--navbarbackground_color);
+    position: sticky;/*it will not work untill we give it atleast one positioning property whther it is top or left or both etc.*/
+    top: 0px;
+}
+ul{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+li{
+    /* border: 2px solid blue; */
+    border-radius: 30px;
+    background-color: var(--navelemnt_color);
+    margin: 15px 80px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 1.39em;
+    font-weight: bolder;
+    text-shadow:6px 6px 4.9px gray;
+    box-shadow: 4px 4px 6px 4px var(--box_shadow);
+}
+
+li:hover{
+    text-shadow: 4px 3px 4.9px gray;
+    box-shadow: 4px 4px 4px 4px var(--box_shadow) inset;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+/*  <---------------------- section part ----------------------> */
+
+
+/*Section tag*/
+section{
+    /* border: 2px solid green; */
+    height:  85vh;
+    width: 98vw;
+    margin: 5px;
+    text-align: center;
+    background-color: var(--background_colorsec);
+}
+
+/*Section inside div tag first child*/
+section div.images{
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+}
+
+
+/*section parrt two main content*/
+#image_1{
+    box-shadow: 5px 6px 15px 2px rgb(187, 187, 187);
+    box-sizing: border-box;
+    display: inline-block;
+    /* border: 4px solid rgb(255, 255, 255); */
+    margin: 60px 60px;
+    width: 35%;
+    height: 75%;
+}
+
+#image_2{
+    box-shadow: -5px 6px 15px 2px rgb(187, 187, 187);
+    box-sizing: border-box;
+    margin: 60px 60px;
+    /* border: 4px solid rgb(255, 255, 255); */
+    width: 35%;
+    height: 75%;
+    display: inline-block;
+}
+
+
+section div p{
+    font-size: 1.2em;
+    text-align: left;
+    padding: 20px 5px;
+}
+
+#image_2 p{
+    color: var(--text_coolor);
+}
+
+#image_1 p{
+    color: var(--text_coolor);
+}
+/*Applying css on that images*/
+section img{
+    border: 2px solid black;
+    width: 100%;
+    height: 70%;
+}
+
+.image-1:hover{
+    position: relative;
+    top: -10px;
+    left: -10px;
+    box-shadow: 8px 8px 15px 2px var(--shadowsec);
+    border: 2px solid black;
+    width: 100%;
+    height: 72%;
+}
+
+.image-2:hover{
+    position: relative;
+    top: -10px;
+    right: -10px;
+    box-shadow: -6px 6px 15px 4px var(--shadowsec);
+    border: 2px solid black;
+    width: 100%;
+    height: 72%;
+}
+
+#image_1:hover{
+    box-shadow: none;
+}
+#image_2:hover{
+    box-shadow: none;
+}
+
+section p{
+    box-sizing: border-box;
+    overflow-y: scroll;
+    /* border: 2px solid blanchedalmond; */
+    height: 28%;
+}
+
+/*  <---------------------- logo part----------------------> */
+.logo{
+    width: 5vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 2;
+    bottom:10px;
+    right: 12px;
+}
+
+
+/*  <---------------------- main part----------------------> */
+main{
+    /* border: 2px solid yellow; */
+    height: 30vh;
+    margin: 5px;
+    
+}
+
+main h2{
+    /* border: 2px solid white; */
+    background-color: var(--navbarbackground_color);
+    border-radius: 20px;
+    display: block;
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    height: 15vh;
+    padding: 25px 50px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.7em;
+    text-shadow: 15px 5px 6px darkblue;
+    box-shadow: 10px 8px 12px 2px darkblue inset;
+}
+
+main p{
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    margin: 5px 10px;
+    text-align: left;
+    height: 10vh;
+    padding: 15px 70px;
+    font-size: 1.1em;
+}
+main h2,p{
+    color: white;
+}
+
+
+
+/*  <---------------------- footer----------------------> */
+
+footer{
+    position: sticky;
+    bottom: 2px;
+    /* border: 2px solid lightblue; */
+    color: white;
+    height: 5vh;
+    background-color: var(--navbarbackground_color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+.copyright{
+    /* border: 2px solid red; */
+    height: 100%;
+    font-size: 1.7em;
+    width: 50%;
+    margin: 2px auto;
+}
+
+footer p{
+    color: black;
+}
+
+footer p span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
